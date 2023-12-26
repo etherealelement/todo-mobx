@@ -1,7 +1,9 @@
-import { DetailedHTMLProps, HTMLAttributes } from "react";
+import { DetailedHTMLProps, HTMLAttributes } from 'react';
 
-export interface TodoItemProps extends DetailedHTMLProps<HTMLAttributes<HTMLLIElement>, HTMLLIElement> {
+export interface TodoItemProps
+  extends DetailedHTMLProps<HTMLAttributes<HTMLLIElement>, HTMLLIElement> {
+  userId?: number;
   itemId: number;
   title: string;
-  isCompleted: boolean;
+  completed: boolean;
 }
